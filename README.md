@@ -10,4 +10,13 @@ a) pip uninstall opencv-python
 b) pip install opencv-contrib-python
 
 2. use aruco_dictionary_name = "DICT_6X6_250"
-3. 
+
+
+1. Calibration:
+	print checkboard
+	use ``Camera'' app in windows.
+	Images are stored in Pictures/CameraRoll [move to local directory]
+2. run camera_calibration.py in image directory [modify square dimension appropriately]
+3. copy calibration_chessboard.yaml from calibration directory to directory where 
+aruco_marker_pose_estimator.py is located
+4. run aruco_marker_pose_estimator.py
